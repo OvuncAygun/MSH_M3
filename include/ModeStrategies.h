@@ -19,3 +19,10 @@ protected:
         }
     }
 };
+
+
+class NormalStrategy : public BaseStrategy {
+public:
+    virtual void configureDevices(IDeviceManager* dm);
+    virtual std::string getModeName() const { return "Normal"; }
+};
