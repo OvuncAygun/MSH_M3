@@ -18,6 +18,8 @@ target_include_directories(MSH_M3
 target_sources(MSH_M3
     PRIVATE
         src/MSH_M3.cpp
+        src/ModeManager.cpp      
+        src/ModeStrategies.cpp   
     
     PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}/include/MSH_M3.h
