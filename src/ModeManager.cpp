@@ -19,3 +19,9 @@ std::string ModeManager::getModeName() const {
     }
     return "None";
 }
+
+void ModeManager::applyMode() {
+    if (this->currentMode && this->deviceManager) {
+        this->currentMode->configureDevices(this->deviceManager);
+    }
+}
