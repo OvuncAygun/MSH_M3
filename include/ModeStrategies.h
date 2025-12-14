@@ -26,3 +26,10 @@ public:
     virtual void configureDevices(IDeviceManager* dm);
     virtual std::string getModeName() const { return "Normal"; }
 };
+
+
+class EveningStrategy : public BaseStrategy {
+public:
+    virtual void configureDevices(IDeviceManager* dm);
+    virtual std::string getModeName() const { return "Evening"; }
+};
