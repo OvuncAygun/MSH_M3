@@ -8,3 +8,7 @@ ModeManager::ModeManager(IDeviceManager* dm) {
 
 ModeManager::~ModeManager() {
 }
+
+void ModeManager::setMode(IModeStrategy* mode) {
+    this->currentMode = mode;
+}
