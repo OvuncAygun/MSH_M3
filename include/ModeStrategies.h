@@ -40,3 +40,10 @@ public:
     virtual void configureDevices(IDeviceManager* dm);
     virtual std::string getModeName() const { return "Party"; }
 };
+
+
+class CinemaStrategy : public BaseStrategy {
+public:
+    virtual void configureDevices(IDeviceManager* dm);
+    virtual std::string getModeName() const { return "Cinema"; }
+};
