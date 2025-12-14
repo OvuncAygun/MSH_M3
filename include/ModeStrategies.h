@@ -33,3 +33,10 @@ public:
     virtual void configureDevices(IDeviceManager* dm);
     virtual std::string getModeName() const { return "Evening"; }
 };
+
+
+class PartyStrategy : public BaseStrategy {
+public:
+    virtual void configureDevices(IDeviceManager* dm);
+    virtual std::string getModeName() const { return "Party"; }
+};
