@@ -9,7 +9,7 @@ private:
     IDeviceManager* deviceManager;
 public:
     ModeManager(IDeviceManager* dm);
-    ~ModeManager();
+    virtual ~ModeManager();
 
     virtual void setMode(IModeStrategy* mode);
     virtual std::string getModeName() const;
