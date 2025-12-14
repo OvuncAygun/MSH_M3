@@ -26,3 +26,11 @@ void PartyStrategy::configureDevices(IDeviceManager* dm) {
     this->toggleDevices(dm, Music, true);
     this->toggleDevices(dm, TV, false); 
 }
+
+
+void CinemaStrategy::configureDevices(IDeviceManager* dm) {
+   
+    this->toggleDevices(dm, Light, false);
+    this->toggleDevices(dm, Music, false);
+    this->toggleDevices(dm, TV, true);
+}
