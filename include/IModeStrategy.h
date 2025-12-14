@@ -4,7 +4,7 @@
 #include "../external/IDeviceManager.h"
 class IModeStrategy {
 public:
-    virtual ~IModeStrategy() = default;
+    virtual ~IModeStrategy() {}
 
     virtual void configureDevices(IDeviceManager* dm) = 0;
 
