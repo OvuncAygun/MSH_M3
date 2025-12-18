@@ -3,34 +3,29 @@
 
 
 void NormalStrategy::configureDevices(IDeviceManager* dm) {
-    
-    this->toggleDevices(dm, Light, true);
-    this->toggleDevices(dm, Music, false);
+    this->toggleDevices(dm, TYPE_Light, true);
+    this->toggleDevices(dm, TYPE_Music, false);
 }
 
 
 
 void EveningStrategy::configureDevices(IDeviceManager* dm) {
-    
-    this->toggleDevices(dm, Light, false);
-    this->toggleDevices(dm, Music, false);
-    
-    this->toggleDevices(dm, TV, true); 
+    this->toggleDevices(dm, TYPE_Light, false);
+    this->toggleDevices(dm, TYPE_Music, false);
+    this->toggleDevices(dm, TYPE_TV, true); 
 }
 
 
 
 void PartyStrategy::configureDevices(IDeviceManager* dm) {
-    
-    this->toggleDevices(dm, Light, true);
-    this->toggleDevices(dm, Music, true);
-    this->toggleDevices(dm, TV, false); 
+    this->toggleDevices(dm, TYPE_Light, true);
+    this->toggleDevices(dm, TYPE_Music, true);
+    this->toggleDevices(dm, TYPE_TV, false); 
 }
 
 
 void CinemaStrategy::configureDevices(IDeviceManager* dm) {
-   
-    this->toggleDevices(dm, Light, false);
-    this->toggleDevices(dm, Music, false);
-    this->toggleDevices(dm, TV, true);
+    this->toggleDevices(dm, TYPE_Light, false);
+    this->toggleDevices(dm, TYPE_Music, false);
+    this->toggleDevices(dm, TYPE_TV, true);
 }

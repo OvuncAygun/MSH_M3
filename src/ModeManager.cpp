@@ -1,10 +1,10 @@
-#include "../include/ModeManager.h"
+#include "ModeManager.h"
+#include "ModeStrategies.h"
 
 ModeManager::ModeManager(IDeviceManager* dm) {
     this->deviceManager = dm;
     this->currentMode = 0; 
 }
-
 
 ModeManager::~ModeManager() {
 }
@@ -23,6 +23,6 @@ std::string ModeManager::getModeName() const {
 
 void ModeManager::applyMode() {
     if (this->currentMode && this->deviceManager) {
-        this->currentMode->configureDevices(this->deviceManager);
+        static_cast<BaseStrategy*>(this->currentMode)->configureDevices(this->deviceManager);
     }
 }
