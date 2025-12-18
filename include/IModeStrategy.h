@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "../external/IDeviceManager.h"
+#include "IDeviceManager.h"
 class IModeStrategy {
 public:
     virtual ~IModeStrategy() {}

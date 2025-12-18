@@ -1,6 +1,6 @@
 #pragma once
 #include "IModeManager.h"
-#include "../external/IDeviceManager.h"
+#include "IDeviceManager.h"
 #include <string>
 
 class ModeManager : public IModeManager {

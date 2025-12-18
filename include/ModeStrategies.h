@@ -1,8 +1,8 @@
 #pragma once
 #include "IModeStrategy.h"
-#include "../external/IDeviceManager.h"
-#include "../external/DeviceType.h"
-#include "../external/IDevice.h"
+#include "IDeviceManager.h"
+#include "DeviceType.h"
+#include "IDevice.h"
 #include <vector>
 #include <iostream>
 #include <string>
