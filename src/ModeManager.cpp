@@ -11,6 +11,7 @@ ModeManager::~ModeManager() {
 
 void ModeManager::setMode(IModeStrategy* mode) {
     this->currentMode = mode;
+    applyMode();
 }
 
 std::string ModeManager::getModeName() const {
