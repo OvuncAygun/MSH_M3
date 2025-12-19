@@ -10,10 +10,10 @@ void MSH_M3::setDeviceManager(IDeviceManager* dm) {
 }
 
 void MSH_M3::initializeModeStrategies() {
-    modeStrategies[0] = new NormalStrategy();
-    modeStrategies[1] = new EveningStrategy();
-    modeStrategies[2] = new PartyStrategy();
-    modeStrategies[3] = new CinemaStrategy();
+    modeStrategies.push_back(new NormalStrategy());
+    modeStrategies.push_back(new EveningStrategy());
+    modeStrategies.push_back(new PartyStrategy());
+    modeStrategies.push_back(new CinemaStrategy());
 }
 
 void MSH_M3::initializeModeManager() {
