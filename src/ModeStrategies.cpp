@@ -1,5 +1,5 @@
-#include "../include/ModeStrategies.h"
-#include "../external/DeviceType.h" 
+#include "ModeStrategies.h"
+#include "DeviceType.h" 
 
 
 void NormalStrategy::configureDevices(IDeviceManager* dm) {
