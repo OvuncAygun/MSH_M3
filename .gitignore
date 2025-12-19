@@ -1,4 +1,5 @@
 */build/
+external/
 build/
 CMakeCache.txt
 CMakeFiles/
